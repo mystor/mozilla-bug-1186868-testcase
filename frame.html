@@ -1,0 +1,7 @@
+<script>
+  var d = new Date();
+  d.setTime(d.getTime() + (1*24*60*60*1000));
+  document.cookie = "test:test; expires=" + d.toUTCString();
+  
+  document.write("COOKIE = " + document.cookie);
+</script>
